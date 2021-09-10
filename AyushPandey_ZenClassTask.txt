@@ -1,0 +1,936 @@
+> use ZEN;
+switched to db ZEN
+>  db.users.insertMany([{"user_name" : "ayush pandey",
+...         "user_email" : "ayush@gmail.com",
+...         "codekata_solved" : 30,
+...         "attendance" : [
+...                 {
+...                         "a_date" : ISODate("2020-10-15T00:00:00Z"),
+...                         "present" : "yes"
+...                 },
+...                 {
+...                         "a_date" : ISODate("2020-10-16T00:00:00Z"),
+...                         "present" : "yes"
+...                 },
+...                 {
+...                         "a_date" : ISODate("2020-10-19T00:00:00Z"),
+...                         "present" : "yes"
+...                 },
+...                 {
+...                         "a_date" : ISODate("2020-10-20T00:00:00Z"),
+...                         "present" : "yes"
+...                 },
+...                 {
+...                         "a_date" : ISODate("2020-10-21T00:00:00Z"),
+...                         "present" : "yes"
+...                 },
+...                 {
+...                         "a_date" : ISODate("2020-10-22T00:00:00Z"),
+...                         "present" : "yes"
+...                 }
+...         ],
+...         "topic" : [
+...                 {
+...                         "topic_date" : ISODate("2020-10-15T00:00:00Z"),
+...                         "topic_name" : "Topic1"
+...                 },
+...                 {
+...                         "topic_date" : ISODate("2020-10-16T00:00:00Z"),
+...                         "topic_name" : "Topic2"
+...                 },
+...                 {
+...                         "topic_date" : ISODate("2020-10-19T00:00:00Z"),
+...                         "topic_name" : "Topic3"
+...                 },
+...                 {
+...                         "topic_date" : ISODate("2020-10-20T00:00:00Z"),
+...                         "topic_name" : "Topic4"
+...                 },
+...                 {
+...                         "topic_date" : ISODate("2020-10-21T00:00:00Z"),
+...                         "topic_name" : "Topic5"
+...                 },
+...                 {
+...                         "topic_date" : ISODate("2020-10-22T00:00:00Z"),
+...                         "topic_name" : "Topic6"
+...                 }
+...         ],
+...         "task" : [
+...                 {
+...                         "task_date" : ISODate("2020-10-15T00:00:00Z"),
+...                         "task_name" : "Task1",
+...                         "submitted" : "yes"
+...                 },
+...                 {
+...                         "task_date" : ISODate("2020-10-16T00:00:00Z"),
+...                         "task_name" : "Task2",
+...                         "submitted" : "yes"
+...                 },
+...                 {
+...                         "task_date" : ISODate("2020-10-19T00:00:00Z"),
+...                         "task_name" : "Task3",
+...                         "submitted" : "yes"
+...                 },
+...                 {
+...                         "task_date" : ISODate("2020-10-20T00:00:00Z"),
+...                         "task_name" : "Task4",
+...                         "submitted" : "yes"
+...                 },
+...                 {
+...                         "task_date" : ISODate("2020-10-21T00:00:00Z"),
+...                         "task_name" : "Task5",
+...                         "submitted" : "yes"
+...                 },
+...                 {
+...                         "task_date" : ISODate("2020-10-22T00:00:00Z"),
+...                         "task_name" : "Task6",
+...                         "submitted" : "yes"
+...                 }
+...         ],
+...         "company_drives" : [
+...                 {
+...                         "company_date" : ISODate("2020-10-16T00:00:00Z"),
+...                         "company_name" : "CHUBB"
+...                 },
+...                 {
+...                         "company_date" : ISODate("2020-10-08T00:00:00Z"),
+...                         "company_name" : "INFOSYS"
+...                 }
+...         ],
+...         "mentor" :{
+...                         "mentor_name" : "Maheswaran",
+...                         "mentee_count" : 40
+...                 }
+... },
+... {
+...         "user_name" : "Gaurav Kumar",
+...         "user_email" : "gaurav@gmail.com",
+...         "codekata_solved" : 24,
+...         "attendance" : [
+...                 {
+...                         "a_date" : ISODate("2020-10-15T00:00:00Z"),
+...                         "present" : "yes"
+...                 },
+...                 {
+...                         "a_date" : ISODate("2020-10-16T00:00:00Z"),
+...                         "present" : "no"
+...                 },
+...                 {
+...                         "a_date" : ISODate("2020-10-19T00:00:00Z"),
+...                         "present" : "yes"
+...                 },
+...                 {
+...                         "a_date" : ISODate("2020-10-20T00:00:00Z"),
+...                         "present" : "no"
+...                 },
+...                 {
+...                         "a_date" : ISODate("2020-10-21T00:00:00Z"),
+...                         "present" : "yes"
+...                 },
+...                 {
+...                         "a_date" : ISODate("2020-10-22T00:00:00Z"),
+...                         "present" : "yes"
+...                 }
+...         ],
+...         "topic" : [
+...                 {
+...                         "topic_date" : ISODate("2020-10-15T00:00:00Z"),
+...                         "topic_name" : "Topic1"
+...                 },
+...                 {
+...                         "topic_date" : ISODate("2020-10-16T00:00:00Z"),
+...                         "topic_name" : "Topic2"
+...                 },
+...                 {
+...                         "topic_date" : ISODate("2020-10-19T00:00:00Z"),
+...                         "topic_name" : "Topic3"
+...                 },
+...                 {
+...                         "topic_date" : ISODate("2020-10-20T00:00:00Z"),
+...                         "topic_name" : "Topic4"
+...                 },
+...                 {
+...                         "topic_date" : ISODate("2020-10-21T00:00:00Z"),
+...                         "topic_name" : "Topic5"
+...                 },
+...                 {
+...                         "topic_date" : ISODate("2020-10-22T00:00:00Z"),
+...                         "topic_name" : "Topic6"
+...                 }
+...         ],
+...         "task" : [
+...                 {
+...                         "task_date" : ISODate("2020-10-15T00:00:00Z"),
+...                         "task_name" : "Task1",
+...                         "submitted" : "yes"
+...                 },
+...                 {
+...                         "task_date" : ISODate("2020-10-16T00:00:00Z"),
+...                         "task_name" : "Task2",
+...                         "submitted" : "no"
+...                 },
+...                 {
+...                         "task_date" : ISODate("2020-10-19T00:00:00Z"),
+...                         "task_name" : "Task3",
+...                         "submitted" : "yes"
+...                 },
+...                 {
+...                         "task_date" : ISODate("2020-10-20T00:00:00Z"),
+...                         "task_name" : "Task4",
+...                         "submitted" : "no"
+...                 },
+...                 {
+...                         "task_date" : ISODate("2020-10-21T00:00:00Z"),
+...                         "task_name" : "Task5",
+...                         "submitted" : "yes"
+...                 },
+...                 {
+...                         "task_date" : ISODate("2020-10-22T00:00:00Z"),
+...                         "task_name" : "Task6",
+...                         "submitted" : "yes"
+...                 }
+...         ],
+...         "company_drives" : [
+...                 {
+...                         "company_date" : ISODate("2020-10-16T00:00:00Z"),
+...                         "company_name" : "CHUBB"
+...                 },
+...                 {
+...                         "company_date" : ISODate("2020-10-20T00:00:00Z"),
+...                         "company_name" : "TATA"
+...                 }
+...         ],
+...         "mentor" :{
+...                         "mentor_name" : "Maheswaran",
+...                         "mentee_count" : 40
+...                 }},
+... {
+...         "user_name" : "Priyanshu Singh",
+...         "user_email" : "priyanshu@gmail.com",
+...         "codekata_solved" : 18,
+...         "attendance" : [
+...                 {
+...                         "a_date" : ISODate("2020-10-15T00:00:00Z"),
+...                         "present" : "yes"
+...                 },
+...                 {
+...                         "a_date" : ISODate("2020-10-16T00:00:00Z"),
+...                         "present" : "yes"
+...                 },
+...                 {
+...                         "a_date" : ISODate("2020-10-19T00:00:00Z"),
+...                         "present" : "no"
+...                 },
+...                 {
+...                         "a_date" : ISODate("2020-10-20T00:00:00Z"),
+...                         "present" : "no"
+...                 },
+...                 {
+...                         "a_date" : ISODate("2020-10-21T00:00:00Z"),
+...                         "present" : "yes"
+...                 },
+...                 {
+...                         "a_date" : ISODate("2020-10-22T00:00:00Z"),
+...                         "present" : "yes"
+...                 }
+...         ],
+...         "topic" : [
+...                 {
+...                         "topic_date" : ISODate("2020-10-15T00:00:00Z"),
+...                         "topic_name" : "Topic1"
+...                 },
+...                 {
+...                         "topic_date" : ISODate("2020-10-16T00:00:00Z"),
+...                         "topic_name" : "Topic2"
+...                 },
+...                 {
+...                         "topic_date" : ISODate("2020-10-19T00:00:00Z"),
+...                         "topic_name" : "Topic3"
+...                 },
+...                 {
+...                         "topic_date" : ISODate("2020-10-20T00:00:00Z"),
+...                         "topic_name" : "Topic4"
+...                 },
+...                 {
+...                         "topic_date" : ISODate("2020-10-21T00:00:00Z"),
+...                         "topic_name" : "Topic5"
+...                 },
+...                 {
+...                         "topic_date" : ISODate("2020-10-22T00:00:00Z"),
+...                         "topic_name" : "Topic6"
+...                 }
+...         ],
+...         "task" : [
+...                 {
+...                         "task_date" : ISODate("2020-10-15T00:00:00Z"),
+...                         "task_name" : "Task1",
+...                         "submitted" : "yes"
+...                 },
+...                 {
+...                         "task_date" : ISODate("2020-10-16T00:00:00Z"),
+...                         "task_name" : "Task2",
+...                         "submitted" : "yes"
+...                 },
+...                 {
+...                         "task_date" : ISODate("2020-10-19T00:00:00Z"),
+...                         "task_name" : "Task3",
+...                         "submitted" : "yes"
+...                 },
+...                 {
+...                         "task_date" : ISODate("2020-10-20T00:00:00Z"),
+...                         "task_name" : "Task4",
+...                         "submitted" : "no"
+...                 },
+...                 {
+...                         "task_date" : ISODate("2020-10-21T00:00:00Z"),
+...                         "task_name" : "Task5",
+...                         "submitted" : "yes"
+...                 },
+...                 {
+...                         "task_date" : ISODate("2020-10-22T00:00:00Z"),
+...                         "task_name" : "Task6",
+...                         "submitted" : "yes"
+...                 }
+...         ],
+...         "company_drives" : [
+...                 {
+...                         "company_date" : ISODate("2020-10-16T00:00:00Z"),
+...                         "company_name" : "CHUBB"
+...                 },
+...                 {
+...                         "company_date" : ISODate("2020-10-06T00:00:00Z"),
+...                         "company_name" : "Mahindra"
+...                 }
+...         ],
+...         "mentor" : {
+...                 "mentor_name" : "Vaibhav",
+...                 "mentee_count" : 26
+...         }
+... },
+... {
+...         "user_name" : "Aman Srivastava",
+...         "user_email" : "aman@gmail.com",
+...         "codekata_solved" : 22,
+...         "attendance" : [
+...                 {
+...                         "a_date" : ISODate("2020-10-15T00:00:00Z"),
+...                         "present" : "yes"
+...                 },
+...                 {
+...                         "a_date" : ISODate("2020-10-16T00:00:00Z"),
+...                         "present" : "yes"
+...                 },
+...                 {
+...                         "a_date" : ISODate("2020-10-19T00:00:00Z"),
+...                         "present" : "yes"
+...                 },
+...                 {
+...                         "a_date" : ISODate("2020-10-20T00:00:00Z"),
+...                         "present" : "yes"
+...                 },
+...                 {
+...                         "a_date" : ISODate("2020-10-21T00:00:00Z"),
+...                         "present" : "yes"
+...                 },
+...                 {
+...                         "a_date" : ISODate("2020-10-22T00:00:00Z"),
+...                         "present" : "no"
+...                 }
+...         ],
+...         "topic" : [
+...                 {
+...                         "topic_date" : ISODate("2020-10-15T00:00:00Z"),
+...                         "topic_name" : "Topic1"
+...                 },
+...                 {
+...                         "topic_date" : ISODate("2020-10-16T00:00:00Z"),
+...                         "topic_name" : "Topic2"
+...                 },
+...                 {
+...                         "topic_date" : ISODate("2020-10-19T00:00:00Z"),
+...                         "topic_name" : "Topic3"
+...                 },
+...                 {
+...                         "topic_date" : ISODate("2020-10-20T00:00:00Z"),
+...                         "topic_name" : "Topic4"
+...                 },
+...                 {
+...                         "topic_date" : ISODate("2020-10-21T00:00:00Z"),
+...                         "topic_name" : "Topic5"
+...                 },
+...                 {
+...                         "topic_date" : ISODate("2020-10-22T00:00:00Z"),
+...                         "topic_name" : "Topic6"
+...                 }
+...         ],
+...         "task" : [
+...                 {
+...                         "task_date" : ISODate("2020-10-15T00:00:00Z"),
+...                         "task_name" : "Task1",
+...                         "submitted" : "yes"
+...                 },
+...                 {
+...                         "task_date" : ISODate("2020-10-16T00:00:00Z"),
+...                         "task_name" : "Task2",
+...                         "submitted" : "yes"
+...                 },
+...                 {
+...                         "task_date" : ISODate("2020-10-19T00:00:00Z"),
+...                         "task_name" : "Task3",
+...                         "submitted" : "yes"
+...                 },
+...                 {
+...                         "task_date" : ISODate("2020-10-20T00:00:00Z"),
+...                         "task_name" : "Task4",
+...                         "submitted" : "yes"
+...                 },
+...                 {
+...                         "task_date" : ISODate("2020-10-21T00:00:00Z"),
+...                         "task_name" : "Task5",
+...                         "submitted" : "yes"
+...                 },
+...                 {
+...                         "task_date" : ISODate("2020-10-22T00:00:00Z"),
+...                         "task_name" : "Task6",
+...                         "submitted" : "no"
+...                 }
+...         ],
+...         "company_drives" : [
+...                 {
+...                         "company_date" : ISODate("2020-10-16T00:00:00Z"),
+...                         "company_name" : "CHUBB"
+...                 },
+...                 {
+...                         "company_date" : ISODate("2020-10-02T00:00:00Z"),
+...                         "company_name" : "DELL"
+...                 },
+...                 {
+...                         "company_date" : ISODate("2020-10-05T00:00:00Z"),
+...                         "company_name" : "AMAZON"
+...                 }
+...         ],
+...         "mentor" : {
+...                 "mentor_name" : "Mahendra",
+...                 "mentee_count" : 38
+...         }
+... },
+... {
+...         "user_name" : "Shashank Yadav",
+...         "user_email" : "shashank@gmail.com",
+...         "codekata_solved" : 12,
+...         "attendance" : [
+...                 {
+...                         "a_date" : ISODate("2020-10-15T00:00:00Z"),
+...                         "present" : "yes"
+...                 },
+...                 {
+...                         "a_date" : ISODate("2020-10-16T00:00:00Z"),
+...                         "present" : "yes"
+...                 },
+...                 {
+...                         "a_date" : ISODate("2020-10-19T00:00:00Z"),
+...                         "present" : "yes"
+...                 },
+...                 {
+...                         "a_date" : ISODate("2020-10-20T00:00:00Z"),
+...                         "present" : "yes"
+...                 },
+...                 {
+...                         "a_date" : ISODate("2020-10-21T00:00:00Z"),
+...                         "present" : "yes"
+...                 },
+...                 {
+...                         "a_date" : ISODate("2020-10-22T00:00:00Z"),
+...                         "present" : "yes"
+...                 }
+...         ],
+...         "topic" : [
+...                 {
+...                         "topic_date" : ISODate("2020-10-15T00:00:00Z"),
+...                         "topic_name" : "Topic1"
+...                 },
+...                 {
+...                         "topic_date" : ISODate("2020-10-16T00:00:00Z"),
+...                         "topic_name" : "Topic2"
+...                 },
+...                 {
+...                         "topic_date" : ISODate("2020-10-19T00:00:00Z"),
+...                         "topic_name" : "Topic3"
+...                 },
+...                 {
+...                         "topic_date" : ISODate("2020-10-20T00:00:00Z"),
+...                         "topic_name" : "Topic4"
+...                 },
+...                 {
+...                         "topic_date" : ISODate("2020-10-21T00:00:00Z"),
+...                         "topic_name" : "Topic5"
+...                 },
+...                 {
+...                         "topic_date" : ISODate("2020-10-22T00:00:00Z"),
+...                         "topic_name" : "Topic6"
+...                 }
+...         ],
+...         "task" : [
+...                 {
+...                         "task_date" : ISODate("2020-10-15T00:00:00Z"),
+...                         "task_name" : "Task1",
+...                         "submitted" : "yes"
+...                 },
+...                 {
+...                         "task_date" : ISODate("2020-10-16T00:00:00Z"),
+...                         "task_name" : "Task2",
+...                         "submitted" : "no"
+...                 },
+...                 {
+...                         "task_date" : ISODate("2020-10-19T00:00:00Z"),
+...                         "task_name" : "Task3",
+...                         "submitted" : "yes"
+...                 },
+...                 {
+...                         "task_date" : ISODate("2020-10-20T00:00:00Z"),
+...                         "task_name" : "Task4",
+...                         "submitted" : "yes"
+...                 },
+...                 {
+...                         "task_date" : ISODate("2020-10-21T00:00:00Z"),
+...                         "task_name" : "Task5",
+...                         "submitted" : "yes"
+...                 },
+...                 {
+...                         "task_date" : ISODate("2020-10-22T00:00:00Z"),
+...                         "task_name" : "Task6",
+...                         "submitted" : "yes"
+...                 }
+...         ],
+...         "company_drives" : [
+...                 {
+...                         "company_date" : ISODate("2020-10-16T00:00:00Z"),
+...                         "company_name" : "CHUBB"
+...                 },
+...                 {
+...                         "company_date" : ISODate("2020-10-12T00:00:00Z"),
+...                         "company_name" : "KPMG"
+...                 },
+...                 {
+...                         "company_date" : ISODate("2020-10-13T00:00:00Z"),
+...                         "company_name" : "COGNIZANT"
+...                 }
+...         ],
+...         "mentor" : {
+...                 "mentor_name" : "Deepak",
+...                 "mentee_count" : 26
+...         }
+... }]);
+{
+        "acknowledged" : true,
+        "insertedIds" : [
+                ObjectId("613b1d1eac8c563f5d0f0615"),
+                ObjectId("613b1d1eac8c563f5d0f0616"),
+                ObjectId("613b1d1eac8c563f5d0f0617"),
+                ObjectId("613b1d1eac8c563f5d0f0618"),
+                ObjectId("613b1d1eac8c563f5d0f0619")
+        ]
+}
+
+
+> db.users.find({"attendance.a_date":{$gte:new Date("2020-10-01T00:00:00Z"),$lte:new Date("2020-10-31T00:00:00Z")}},{user_name:1,"topic.topic_name":1,"task.task_name":1}).pretty()
+{
+        "_id" : ObjectId("613b1d1eac8c563f5d0f0615"),
+        "user_name" : "ayush pandey",
+        "topic" : [
+                {
+                        "topic_name" : "Topic1"
+                },
+                {
+                        "topic_name" : "Topic2"
+                },
+                {
+                        "topic_name" : "Topic3"
+                },
+                {
+                        "topic_name" : "Topic4"
+                },
+                {
+                        "topic_name" : "Topic5"
+                },
+                {
+                        "topic_name" : "Topic6"
+                }
+        ],
+        "task" : [
+                {
+                        "task_name" : "Task1"
+                },
+                {
+                        "task_name" : "Task2"
+                },
+                {
+                        "task_name" : "Task3"
+                },
+                {
+                        "task_name" : "Task4"
+                },
+                {
+                        "task_name" : "Task5"
+                },
+                {
+                        "task_name" : "Task6"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("613b1d1eac8c563f5d0f0616"),
+        "user_name" : "Gaurav Kumar",
+        "topic" : [
+                {
+                        "topic_name" : "Topic1"
+                },
+                {
+                        "topic_name" : "Topic2"
+                },
+                {
+                        "topic_name" : "Topic3"
+                },
+                {
+                        "topic_name" : "Topic4"
+                },
+                {
+                        "topic_name" : "Topic5"
+                },
+                {
+                        "topic_name" : "Topic6"
+                }
+        ],
+        "task" : [
+                {
+                        "task_name" : "Task1"
+                },
+                {
+                        "task_name" : "Task2"
+                },
+                {
+                        "task_name" : "Task3"
+                },
+                {
+                        "task_name" : "Task4"
+                },
+                {
+                        "task_name" : "Task5"
+                },
+                {
+                        "task_name" : "Task6"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("613b1d1eac8c563f5d0f0617"),
+        "user_name" : "Priyanshu Singh",
+        "topic" : [
+                {
+                        "topic_name" : "Topic1"
+                },
+                {
+                        "topic_name" : "Topic2"
+                },
+                {
+                        "topic_name" : "Topic3"
+                },
+                {
+                        "topic_name" : "Topic4"
+                },
+                {
+                        "topic_name" : "Topic5"
+                },
+                {
+                        "topic_name" : "Topic6"
+                }
+        ],
+        "task" : [
+                {
+                        "task_name" : "Task1"
+                },
+                {
+                        "task_name" : "Task2"
+                },
+                {
+                        "task_name" : "Task3"
+                },
+                {
+                        "task_name" : "Task4"
+                },
+                {
+                        "task_name" : "Task5"
+                },
+                {
+                        "task_name" : "Task6"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("613b1d1eac8c563f5d0f0618"),
+        "user_name" : "Aman Srivastava",
+        "topic" : [
+                {
+                        "topic_name" : "Topic1"
+                },
+                {
+                        "topic_name" : "Topic2"
+                },
+                {
+                        "topic_name" : "Topic3"
+                },
+                {
+                        "topic_name" : "Topic4"
+                },
+                {
+                        "topic_name" : "Topic5"
+                },
+                {
+                        "topic_name" : "Topic6"
+                }
+        ],
+        "task" : [
+                {
+                        "task_name" : "Task1"
+                },
+                {
+                        "task_name" : "Task2"
+                },
+                {
+                        "task_name" : "Task3"
+                },
+                {
+                        "task_name" : "Task4"
+                },
+                {
+                        "task_name" : "Task5"
+                },
+                {
+                        "task_name" : "Task6"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("613b1d1eac8c563f5d0f0619"),
+        "user_name" : "Shashank Yadav",
+        "topic" : [
+                {
+                        "topic_name" : "Topic1"
+                },
+                {
+                        "topic_name" : "Topic2"
+                },
+                {
+                        "topic_name" : "Topic3"
+                },
+                {
+                        "topic_name" : "Topic4"
+                },
+                {
+                        "topic_name" : "Topic5"
+                },
+                {
+                        "topic_name" : "Topic6"
+                }
+        ],
+        "task" : [
+                {
+                        "task_name" : "Task1"
+                },
+                {
+                        "task_name" : "Task2"
+                },
+                {
+                        "task_name" : "Task3"
+                },
+                {
+                        "task_name" : "Task4"
+                },
+                {
+                        "task_name" : "Task5"
+                },
+                {
+                        "task_name" : "Task6"
+                }
+        ]
+}
+
+
+>  db.users.find({"company_drives.company_date":{$gte:new ISODate("2020-10-15"),$lte:new ISODate("2020-10-31")}},{"user_name":1,"company_drives.company_name.$":1}).pretty();
+{
+        "_id" : ObjectId("613b1d1eac8c563f5d0f0615"),
+        "user_name" : "ayush pandey",
+        "company_drives" : [
+                {
+                        "company_name" : "CHUBB"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("613b1d1eac8c563f5d0f0616"),
+        "user_name" : "Gaurav Kumar",
+        "company_drives" : [
+                {
+                        "company_name" : "CHUBB"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("613b1d1eac8c563f5d0f0617"),
+        "user_name" : "Priyanshu Singh",
+        "company_drives" : [
+                {
+                        "company_name" : "CHUBB"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("613b1d1eac8c563f5d0f0618"),
+        "user_name" : "Aman Srivastava",
+        "company_drives" : [
+                {
+                        "company_name" : "CHUBB"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("613b1d1eac8c563f5d0f0619"),
+        "user_name" : "Shashank Yadav",
+        "company_drives" : [
+                {
+                        "company_name" : "CHUBB"
+                }
+        ]
+}
+
+
+
+> db.users.find({},{"user_name":1,"company_drives":1}).pretty();
+{
+        "_id" : ObjectId("613b1d1eac8c563f5d0f0615"),
+        "user_name" : "ayush pandey",
+        "company_drives" : [
+                {
+                        "company_date" : ISODate("2020-10-16T00:00:00Z"),
+                        "company_name" : "CHUBB"
+                },
+                {
+                        "company_date" : ISODate("2020-10-08T00:00:00Z"),
+                        "company_name" : "INFOSYS"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("613b1d1eac8c563f5d0f0616"),
+        "user_name" : "Gaurav Kumar",
+        "company_drives" : [
+                {
+                        "company_date" : ISODate("2020-10-16T00:00:00Z"),
+                        "company_name" : "CHUBB"
+                },
+                {
+                        "company_date" : ISODate("2020-10-20T00:00:00Z"),
+                        "company_name" : "TATA"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("613b1d1eac8c563f5d0f0617"),
+        "user_name" : "Priyanshu Singh",
+        "company_drives" : [
+                {
+                        "company_date" : ISODate("2020-10-16T00:00:00Z"),
+                        "company_name" : "CHUBB"
+                },
+                {
+                        "company_date" : ISODate("2020-10-06T00:00:00Z"),
+                        "company_name" : "Mahindra"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("613b1d1eac8c563f5d0f0618"),
+        "user_name" : "Aman Srivastava",
+        "company_drives" : [
+                {
+                        "company_date" : ISODate("2020-10-16T00:00:00Z"),
+                        "company_name" : "CHUBB"
+                },
+                {
+                        "company_date" : ISODate("2020-10-02T00:00:00Z"),
+                        "company_name" : "DELL"
+                },
+                {
+                        "company_date" : ISODate("2020-10-05T00:00:00Z"),
+                        "company_name" : "AMAZON"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("613b1d1eac8c563f5d0f0619"),
+        "user_name" : "Shashank Yadav",
+        "company_drives" : [
+                {
+                        "company_date" : ISODate("2020-10-16T00:00:00Z"),
+                        "company_name" : "CHUBB"
+                },
+                {
+                        "company_date" : ISODate("2020-10-12T00:00:00Z"),
+                        "company_name" : "KPMG"
+                },
+                {
+                        "company_date" : ISODate("2020-10-13T00:00:00Z"),
+                        "company_name" : "COGNIZANT"
+                }
+        ]
+}
+
+
+> db.users.find({},{user_name:1,codekata_solved:1});
+{ "_id" : ObjectId("613b1d1eac8c563f5d0f0615"), "user_name" : "ayush pandey", "codekata_solved" : 30 }
+{ "_id" : ObjectId("613b1d1eac8c563f5d0f0616"), "user_name" : "Gaurav Kumar", "codekata_solved" : 24 }
+{ "_id" : ObjectId("613b1d1eac8c563f5d0f0617"), "user_name" : "Priyanshu Singh", "codekata_solved" : 18 }
+{ "_id" : ObjectId("613b1d1eac8c563f5d0f0618"), "user_name" : "Aman Srivastava", "codekata_solved" : 22 }
+{ "_id" : ObjectId("613b1d1eac8c563f5d0f0619"), "user_name" : "Shashank Yadav", "codekata_solved" : 12 }
+
+
+
+> db.users.find({"mentor.mentee_count":{$gte:15}},{"user_name":1,"mentor.mentor_name":1}).pretty();
+{
+        "_id" : ObjectId("613b1d1eac8c563f5d0f0615"),
+        "user_name" : "ayush pandey",
+        "mentor" : {
+                "mentor_name" : "Maheswaran"
+        }
+}
+{
+        "_id" : ObjectId("613b1d1eac8c563f5d0f0616"),
+        "user_name" : "Gaurav Kumar",
+        "mentor" : {
+                "mentor_name" : "Maheswaran"
+        }
+}
+{
+        "_id" : ObjectId("613b1d1eac8c563f5d0f0617"),
+        "user_name" : "Priyanshu Singh",
+        "mentor" : {
+                "mentor_name" : "Vaibhav"
+        }
+}
+{
+        "_id" : ObjectId("613b1d1eac8c563f5d0f0618"),
+        "user_name" : "Aman Srivastava",
+        "mentor" : {
+                "mentor_name" : "Mahendra"
+        }
+}
+{
+        "_id" : ObjectId("613b1d1eac8c563f5d0f0619"),
+        "user_name" : "Shashank Yadav",
+        "mentor" : {
+                "mentor_name" : "Deepak"
+        }
+}
+
+> db.users.find({$and:[{"attendance.present":"no"},{"task.submitted":"no"}]}).count();
+3
